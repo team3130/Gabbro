@@ -9,7 +9,7 @@ Chassis* Chassis::GetInstance()
 	return m_pInstance;
 }
 
-Chassis::Chassis()
+Chassis::Chassis() : Subsystem("Chassis")
 {
 	m_drive = new RobotDrive(PORT_LEFTMOTOR, PORT_RIGHTMOTOR);
 	m_drive->SetSafetyEnabled(false);

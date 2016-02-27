@@ -1,5 +1,7 @@
 #include "OI.h"
 
+OI* OI::m_pInstance = NULL;
+
 OI* OI::GetInstance()
 {
 	if(!m_pInstance) m_pInstance = new OI;
